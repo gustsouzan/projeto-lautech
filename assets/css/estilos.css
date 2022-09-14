@@ -116,6 +116,17 @@ body {
     content: "\e90a";
 }
 
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 900px) {
 
     .cabecalho--mobile {
@@ -151,4 +162,66 @@ body {
     .menu-desktop a {
         margin-right: 20px;
     }
+}
+
+main {
+    padding: 16px;
+}
+
+.banner {
+    display: flex;
+    margin-bottom: 16x;
+}
+
+.banner figure {
+    width: 100%;
+}
+
+.banner figure img {
+    border-radius: 10px;
+    box-shadow: #FFFFFF 0px 20px 30px -10px;
+    max-height: 500px;
+}
+
+.banner figure figcaption{
+    display: none;
+}
+
+
+@media screen and (min-width:720px) {
+    .banner {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner figure {
+        margin-bottom: 16px;
+    }
+
+    .banner__anterior::before {
+        content: "\e902";
+    }
+
+    .banner__proximo::before {
+        content: "\e902";
+    }
+}
+
+section {
+    margin: 16px 0;   
+}
+
+.sobre p{
+    padding: 7px 0 ;
+    text-align: center;
+}
+
+.sobre h2 {
+    margin-bottom: 16px;
+}
+
+footer {
+    height: 200px;
+    background-color: #15191C;
 }
