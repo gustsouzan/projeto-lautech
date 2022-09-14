@@ -209,7 +209,13 @@ main {
 }
 
 section {
-    margin: 16px 0;   
+    margin: 16px 0;       
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre p{
@@ -219,9 +225,36 @@ section {
 
 .sobre h2 {
     margin-bottom: 16px;
+    text-align: center;
+}
+
+.p-principal {
+    font-weight: 700;
+}
+
+.sobre__imagem {
+    width: 400px;
+    height: 1000px;
+    margin: 16px 0;
 }
 
 footer {
     height: 200px;
     background-color: #15191C;
+}
+
+@media screen and (min-width:720px) {
+    .sobre__conteudo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sobre__conteudo div {
+        padding: 16px;
+    }
+
+    .sobre__imagem {
+        height: inherit;
+        margin: 0;
+    }
 }
