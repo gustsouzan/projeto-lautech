@@ -232,10 +232,14 @@ section {
     font-weight: 700;
 }
 
-.sobre__imagem {
-    width: 400px;
-    height: 1000px;
-    margin: 16px 0;
+.sobre__imagem img {
+    border-radius: 10px;
+    box-shadow: #FFFFFF 0px 20px 30px -10px;
+    margin-top: 16px;
+}
+
+.sobre__conteudo div {
+    width: 100%;
 }
 
 footer {
@@ -251,10 +255,5 @@ footer {
 
     .sobre__conteudo div {
         padding: 16px;
-    }
-
-    .sobre__imagem {
-        height: inherit;
-        margin: 0;
     }
 }
