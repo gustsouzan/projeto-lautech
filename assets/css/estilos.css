@@ -125,6 +125,7 @@ body {
 .titulo-secao {
     font-size: 1.2rem;
     font-weight: 700;
+    margin-bottom: 26px;
 }
 
 @media screen and (min-width: 900px) {
@@ -209,13 +210,13 @@ main {
 }
 
 section {
-    margin: 16px 0;       
+    margin: 16px 0;
+    padding: 16px;       
 }
 
 .sobre {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .sobre p{
@@ -225,7 +226,6 @@ section {
 
 .sobre h2 {
     margin-bottom: 16px;
-    text-align: center;
 }
 
 .p-principal {
@@ -242,12 +242,49 @@ section {
     width: 100%;
 }
 
-footer {
-    height: 200px;
-    background-color: #15191C;
+.secao-cartao--content {
+    display: flex;
+    flex-direction: column;
 }
 
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2C343A;
+    margin: 16px 0;
+}
+
+.cartao__conteudo {
+    padding: 16px;
+    display: grid;
+    gap: 8px;
+}
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao__perfil {
+    color: #95999C;
+    font-size: 0.9rem;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+.cartao__info--visualizacao::before {
+    content: "\e90f";
+    margin-right: 8px;    
+}
 @media screen and (min-width:720px) {
+    section {
+        margin-top: 50px;
+    }
+
     .sobre__conteudo {
         display: flex;
         flex-direction: row;
@@ -256,4 +293,47 @@ footer {
     .sobre__conteudo div {
         padding: 16px;
     }
+
+    .secao-cartao--content {
+        flex-direction: row;
+    }
+
+    .cartao { 
+        margin: 16px 16px 0;
+    }
+}
+
+.secao__opoio {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao__opoio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao__opoio div button {
+    background-color: darkblue;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:720px) {
+    
+    .secao__opoio div {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .secao__opoio div p {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+footer {
+    height: 200px;
+    background-color: #15191C;
 }
