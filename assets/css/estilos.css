@@ -315,9 +315,15 @@ section {
 }
 
 .secao__opoio div button {
-    background-color: darkblue;
+    background-color: #4128FC;
     padding: 6px;
     border-radius: 10px;
+}
+
+.secao__opoio div button:hover {
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @media screen and (min-width:720px) {
