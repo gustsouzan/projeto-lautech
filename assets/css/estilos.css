@@ -318,6 +318,7 @@ section {
     background-color: #4128FC;
     padding: 6px;
     border-radius: 10px;
+    margin: 16px 0;
 }
 
 .secao__opoio div button:hover {
@@ -327,11 +328,6 @@ section {
 }
 
 @media screen and (min-width:720px) {
-    
-    .secao__opoio div {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 
     .secao__opoio div p {
         width: 50%;
